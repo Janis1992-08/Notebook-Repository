@@ -23,6 +23,8 @@ console.log(complex[2][1]); */
 
 
 
+
+
 /* Objects */
 //gekennzeichten duch geschweifte klammern
 
@@ -30,7 +32,7 @@ const person = {
     //key / value pairs
     name: "Bibi Blocksberg",
     age: 21,
-    isStudent: false; // Boolean
+    isStudent: false, // Boolean
     address: {
         street: "Berlin Str.",
         houseNumber: 42,
@@ -39,8 +41,43 @@ const person = {
     }
 } // Option 8/9
 
+person.name = "Harry Potter";
+person.address.houseNumber = 44;
+
+person.score = 15; // additional property
+
 
 // dot notation
 // object properties always with Key or Value 
-console.log(person.address.street);
+console.log(person.name);
+console.log(person.address.houseNumber);
 /* console.log(person["address"]["houseNumber"]) */
+
+
+
+
+// Array + Objects
+
+const people = [
+    {
+        name: "john",
+        age: 30
+    },
+    {
+        name: "alex",
+        age: 33
+    }
+] // Array of Objects
+
+console.log(people[1].name)
+
+
+
+const unser = {
+    userId: "1234",
+    email: "student@gmx.com",
+    shoppingList: ["tomato", "banana", "chocolate"]
+}
+
+console.log(user.shoppingList[2])
+
